@@ -1,0 +1,24 @@
+<body background="/assets/background.webp">
+  <div>
+   <pre>
+ 
+ 
+   </pre>
+     <select #alphabet (change)="showimg(alphabet.value)" style="width: 25%"> 
+     <option value='s'>--select--</option>
+     <option value='a'>A</option>
+     <option value='b'>B</option>
+     <option value='c'>C</option>
+     <option value='d'>D</option>
+     </select> &nbsp; <input type="=text" #name> &nbsp; <button (click)="search(name.value)">Search</button>
+   </div> 
+   <pre>
+ 
+ 
+   </pre>
+   <div style="text-align:center;">
+     result: {{result}}
+     <br> 
+     <img src="{{link}}" style="width: 50%;">
+   </div>
+ </body>
